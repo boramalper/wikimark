@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script defer type="module" src="/main.js"></script>
+        <link rel="stylesheet" href="/wikimark.css" />
+        <link rel="stylesheet" href="/redirector.css" />
+        <title>Wikimark</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <h1>Wikimark</h1>
+
+        <div id="progressStatus">
+            <span id="status">Initializing...</span><progress></progress>
+        </div>
+
+        <div id="results">
+            <h2>Results</h2>
+            <div id="topResult">
+                <!-- The top result will be here. -->
+            </div>
+
+            <details>
+                <summary></summary>
+                <div id="otherResults">
+            </details>
+        </div>
+
+        <script id="resultTemplate" type="x-tmpl-mustache">
+            <div class="result">
+                <h3>{{ name }}</h3>
+                <p>{{ description }}</p>
+                <ul>
+                    {{# urls}}
+                    <li><a href="{{ . }}">{{ . }}</a></li>
+                    {{/ urls}}
+                </ul>
+                <small><a href="{{ permalink }}">permanent link</a> | <a href="{{ uri }}">see on Wikidata</a></small>
+            </div>
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/wikimark.css" />
+  <link rel="stylesheet" href="/website.css" />
+  <title>Wikimark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <h1>Wikimark</h1>
+
+  <section>
+    <h2>What is Wikimark?</h2>
+    <p>Wikimark is a social bookmarking website that is powered by <a
+        href="https://www.wikidata.org/wiki/Wikidata:Introduction">Wikidata</a>. Wikimark allows users to search for
+      websites by keywords or look them up by ID, and redirects users automatically.</p>
+
+      <h3>Examples</h3>
+      <dl>
+        <dt><a href="https://academic-torrents.wikimark.net/">academic-torrents.wikimark.net</a></dt>
+        <dd>to <em>search</em> for "academic torrents"</dd>
+        <dt><a href="https://q96371421.wikimark.net/">q96371421.wikimark.net</a></dt>
+        <dd>to <em>look up</em> <a href="https://www.wikidata.org/wiki/Q1817856">Academic Torrents</a>, the website owned by the Institute for Reproducible Research.</dd>
+      </dl>
+      
+      <p>Prefer lookups for bookmarking as they are permanent identifiers of websites. Search results might change over time.</p>
+
+      <p>Either way, Wikimark redirects you automatically. To see all results, go back in your browser.</p>
+  </section>
+
+  <section>
+    <h2>How does it work?</h2>
+    <p>Wikimark is a static website, meaning that everything described below happens in your browser.</p>
+    
+    <p>Wikimark uses <a href="https://query.wikidata.org/">Wikidata Query Service</a> to run <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> (pronounced "sparkle") queries against Wikidata. For each match, it retrieves all <a href="https://www.wikidata.org/wiki/Property:P856">"official websites" (P856)</a> and relevant metadata.</p>
+
+    <p>If you're interested, see its <a href="https://github.com/boramalper/wikimark">git repo</a>.</p>
+  </section>
+
+  <section>
+    <h2>Notices</h2>
+    <p>Wikimark is <strong>not</strong> affiliated with Wikidata, Wikipedia,
+      or Wikimedia Foundation; it's a personal project of <a href="https://boramalper.org/">Bora M. Alper</a>.</p>
+
+    <p>Wikimark does <strong>not</strong> store any data <strong>nor</strong> acts as a service provider intermediary. Visitors of Wikimark run its code completely in their browsers, using which they query Wikidata programmatically with the purpose of finding the latest URLs of websites they'd like to visit.</p>
+
+    <p>Wikimark is licensed under <a href="https://spdx.org/licenses/ISC">ISC License</a>.</p>
+  </section>
+
+</body>
+
+</html>
