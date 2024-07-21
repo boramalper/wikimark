@@ -20,7 +20,7 @@ const Rank = Object.freeze({
 // Sample values:
 //   - "localhost:8080"
 //   - "wikimark.net"
-const BASE_HOST = "localhost:8080";
+const BASE_HOST = "wikimark.net";
 const WIKIDATA_SPARQL_ENDPOINT = "https://query.wikidata.org/sparql";
 
 /* =============================================================================
